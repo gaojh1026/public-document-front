@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-	"type": "module",
+  "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "serve": "vitepress serve src"
   },
   "devDependencies": {
+    "prettier": "^3.3.1",
     "vitepress": "1.1.4"
+  },
+  "dependencies": {
+    "@algolia/client-search": "^4.23.3",
+    "genji-theme-vitepress": "^0.2.3"
   }
 }
