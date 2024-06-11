@@ -1,9 +1,12 @@
 import { defineConfig } from "vitepress";
-
-import socialLinks from "./config/socialLinks";
-import nav from "./config/nav";
-import sidebar from "./config/sidebar";
+// 搜索栏
 import search from "./config/search";
+// 顶部导航
+import nav from "./config/nav";
+// 右上角社交连接
+import socialLinks from "./config/socialLinks";
+// 侧边栏
+import routerConfig from '../router.config.json'
 
 export default defineConfig({
   base: "/", // url默认前缀
@@ -31,11 +34,10 @@ export default defineConfig({
   cleanUrls: true, // url是否带.html后缀
   head: createHead(),
   themeConfig: {
-    logo: "/img/buding.svg",
-    siteTitle: "前端面试题", // 网站左上角标题
+    logo: "/logo.svg",
+    siteTitle: "文档", // 网站左上角标题
     outlineTitle: "⚡️文档内容大纲", // 大纲标题
     outline: "deep", // 大纲显示层级：number：只显示 | [number, number]：指定层级范围显示 | 'deep'：全部显示 | false：不显示
-
     // 使用浏览器内置索引进行模糊全文搜索
     search, 
     // 右上角导航
@@ -43,11 +45,13 @@ export default defineConfig({
     // 右上角导航中显示带有图标的社交帐户链接
     socialLinks,
     // 左边侧栏导航
-    sidebar,
+    sidebar:{
+      "/":routerConfig,
+    },
     // 编辑
     editLink: {
       pattern:
-        "https://github.com/muyaCode/FrontEndInterviewQuestion/edit/main/docs/:path",
+        "https://gitlab.com/gaojh/project/vitepress_docs/-/blob/main/pages/:path",
       text: "在 Gitlab 上编辑此页",
     },
     // 自定义上次更新的文本和日期格式
@@ -62,13 +66,11 @@ export default defineConfig({
       prev: "上一篇",
       next: "下一篇",
     },
-
     // // 右边文档大纲下面的-卡片广告
     // carbonAds: {
     //   code: "卡片广告 code",
     //   placement: "卡片广告布置",
     // },
-
     // 首页页脚配置。您可以添加消息和版权。仅当页面由于设计原因不包含边栏时，才会显示页脚。
     footer: {
       message: "Released under the MIT License.",
@@ -84,24 +86,24 @@ export default defineConfig({
 
 function createHead() {
   return [
-    ['meta', { name: 'author', content: 'Vbenjs Team' }],
-    [
-      'meta',
-      {
-        name: 'keywords',
-        content: 'vben, vitejs, vite, ant-design-vue, vue',
-      },
-    ],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.ico' }],
-    [
-      'meta',
-      {
-        name: 'viewport',
-        content:
-          'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no',
-      },
-    ],
-    ['meta', { name: 'keywords', content: 'vue vben admin docs' }],
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    // ['meta', { name: 'author', content: 'Vbenjs Team' }],
+    // [
+    //   'meta',
+    //   {
+    //     name: 'keywords',
+    //     content: 'vben, vitejs, vite, ant-design-vue, vue',
+    //   },
+    // ],
+    // ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.ico' }],
+    // [
+    //   'meta',
+    //   {
+    //     name: 'viewport',
+    //     content:
+    //       'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no',
+    //   },
+    // ],
+    // ['meta', { name: 'keywords', content: 'vue vben admin docs' }],
+    ['link', { rel: 'icon', href: '/logo.svg' }],
   ];
 }

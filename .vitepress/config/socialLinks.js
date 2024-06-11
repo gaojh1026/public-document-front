@@ -1,20 +1,18 @@
 // 右上角导航中显示带有图标的社交帐户链接
 const socialLinks = [
-  { icon: 'discord', link: 'https://github.com/' },
-  { icon: 'facebook', link: 'https://github.com/' },
-  { icon: 'instagram', link: 'https://github.com/' },
-  { icon: 'linkedin', link: 'https://github.com/' },
-  { icon: 'slack', link: 'https://github.com/' },
-  { icon: 'twitter', link: 'https://github.com/' },
+  // { icon: 'discord', link: 'https://github.com/' },
+  // { icon: 'facebook', link: 'https://github.com/' },
+  // { icon: 'instagram', link: 'https://github.com/' },
+  // { icon: 'linkedin', link: 'https://github.com/' },
+  // { icon: 'slack', link: 'https://github.com/' },
+  // { icon: 'twitter', link: 'https://github.com/' },
   // { icon: 'youtube', link: 'https://github.com/' },
-  { icon: 'github', link: 'https://github.com/muyaCode/FrontEndInterviewQuestion' },
-  { icon: {
-      svg: `<svg t="1690871772610" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="987" width="256" height="256">
-        <path d="M512 1024C229.222 1024 0 794.778 0 512S229.222 0 512 0s512 229.222 512 512-229.222 512-512 512z m259.149-568.883h-290.74a25.293 25.293 0 0 0-25.292 25.293l-0.026 63.206c0 13.952 11.315 25.293 25.267 25.293h177.024c13.978 0 25.293 11.315 25.293 25.267v12.646a75.853 75.853 0 0 1-75.853 75.853h-240.23a25.293 25.293 0 0 1-25.267-25.293V417.203a75.853 75.853 0 0 1 75.827-75.853h353.946a25.293 25.293 0 0 0 25.267-25.292l0.077-63.207a25.293 25.293 0 0 0-25.268-25.293H417.152a189.62 189.62 0 0 0-189.62 189.645V771.15c0 13.977 11.316 25.293 25.294 25.293h372.94a170.65 170.65 0 0 0 170.65-170.65V480.384a25.293 25.293 0 0 0-25.293-25.267z" fill="#C71D23" p-id="988"></path>
-      </svg>`
-    }, 
-    link: 'https://gitee.com/muyaCode/FrontEndInterviewQuestion' 
-  }
+  {
+    icon: {
+      svg: `<svg t="1718116896968" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5665" width="256" height="256"><path d="M932.317184 567.76704L885.10464 422.46144l-93.57312-287.997952c-4.8128-14.81728-25.776128-14.81728-30.590976 0L667.36128 422.459392H356.62848L263.051264 134.46144c-4.8128-14.81728-25.776128-14.81728-30.593024 0l-93.57312 287.997952-47.210496 145.309696a32.165888 32.165888 0 0 0 11.68384 35.96288l408.6272 296.890368L920.61696 603.734016c11.272192-8.192 15.990784-22.71232 11.68384-35.964928" fill="#FC6D26" p-id="5666"></path><path d="M512.002048 900.62848l155.365376-478.171136H356.634624z" fill="#E24329" p-id="5667"></path><path d="M512.004096 900.62848L356.63872 422.47168H138.901504z" fill="#FC6D26" p-id="5668"></path><path d="M138.891264 422.465536l-47.214592 145.309696a32.16384 32.16384 0 0 0 11.685888 35.96288L511.991808 900.62848z" fill="#FCA326" p-id="5669"></path><path d="M138.893312 422.459392h217.737216L263.053312 134.46144c-4.8128-14.819328-25.778176-14.819328-30.590976 0z" fill="#E24329" p-id="5670"></path><path d="M512.002048 900.62848l155.365376-478.154752H885.10464z" fill="#FC6D26" p-id="5671"></path><path d="M885.11488 422.465536l47.214592 145.309696a32.16384 32.16384 0 0 1-11.685888 35.96288L512.014336 900.62848z" fill="#FCA326" p-id="5672"></path><path d="M885.096448 422.459392H667.36128l93.577216-287.997952c4.814848-14.819328 25.778176-14.819328 30.590976 0z" fill="#E24329" p-id="5673"></path></svg>`
+    },
+    link: 'https://gitlab.com/gaojiahui'
+  },
 ]
 
 export default socialLinks;

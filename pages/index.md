@@ -2,15 +2,14 @@
 # 文档：https://vitepress.dev/zh/reference/site-config#config-resolution
 
 layout: home
-heroImage: /logo.png
 
 title: 文档汇总
 titleTemplate: 泽兰的个人文档
 
 hero:
-  name: 项目、文章等汇总
-  text: 逆水行舟
-  tagline: "不进则退"
+  name: 泽兰知识汇总
+  text: VitePress
+  # tagline: "echo"
   # 首页右边Logo设置
   image:
     src: /logo.svg
