@@ -276,18 +276,7 @@
         "collapsible": true,
         "collapsed": true,
         "items": [
-            {
-                "text":"1、javaScript",
-                "link":"/notes/(1)-JavaScript.md"
-            },
-            {
-                "text":"2、H5API",
-                "link":"/notes/(2)-H5API.md"
-            },
-            {
-                "text":"3、ES6",
-                "link":"/notes/(3)-ES6.md"
-            }
+
         ]
     }
 ]
