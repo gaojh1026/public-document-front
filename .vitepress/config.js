@@ -29,7 +29,7 @@ export default defineConfig({
       rightDelimiter: "]]",
     },
   },
-  outDir: "../dist", // 打包输出的目录
+  outDir: "./dist", // 打包输出的目录
   titleTemplate: "前端笔记", // 标题后缀
   cleanUrls: true, // url是否带.html后缀
   head: createHead(),
