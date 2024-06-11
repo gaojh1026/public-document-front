@@ -3,12 +3,12 @@
 
 layout: home
 
-title: 前端面试题整合
-titleTemplate: 收集整合前端面试题，前端面试题大全
+title: 文档汇总
+titleTemplate: 泽兰的个人文档
 
 hero:
-  name: 前端面试题收集整合
-  text: 后浪卷前浪
+  name: 项目、文章等汇总
+  text: 逆水行舟
   tagline: "不进则退"
   # 首页右边Logo设置
   image:
@@ -17,37 +17,33 @@ hero:
   actions:
     - theme: brand
       text: 查看笔记
-      link: /order/markdown图标
+      link: /home
     - theme: alt
-      text: 在 GitHub 上查看
-      link: https://github.com/muyaCode/FrontEndInterviewQuestion
+      text: 在 Gitlab社区版 上查看
+      link: https://gitlab.com/gaojiahui
 
 features:
   - icon: 💡
-    title: 计算机基础面试题
-    details: 包括：
+    title: 语雀文档
+    details: 个人语雀文档汇总
   - icon: 📦
-    title: CSS和HTML面试题
-    details: 包括：
-  - icon: 🛠️
-    title: JavaScript面试题
-    details: 包括：
-  - icon: 🎁
-    title: JavaScript和浏览器原理面试题
-    details: 包括：
-  - icon: ☀️
-    title: 主流框架相关面试题
-    details: 包括：Vue、React、JQuery...
-  - icon: 💝
-    title: Node面试题
-    details: 包括：基础Node API、Node后端、脚本、脚手架，等
+    title: 掘金收藏
+    details: 掘金个人收藏的文章
   - icon: 💎
-    title: 其他面试题
-    details: 包括：前端工程化、前端构建工具
-
+    title: 面试题
+    details: 包括：常规的面试题等
   - icon: 🌟
     title: 开源面试题收集
     details: 包括：
+  # - icon: 🛠️
+  #   title: JavaScript面试题
+  #   details: 包括：
+  # - icon: 🎁
+  #   title: JavaScript和浏览器原理面试题
+  #   details: 包括：
+  # - icon: ☀️
+  #   title: 主流框架相关面试题
+  #   details: 包括：Vue、React、JQuery...
 ---
 
 <!-- 文档：https://vitepress.vuejs.org/config/frontmatter-configs#layout -->

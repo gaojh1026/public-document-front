@@ -11,10 +11,9 @@ import search from "./config/search";
 export default defineConfig({
   // 代码块运行插件文档：https://genji-md.dev/getting-started
   extends: config,
-
   lang: "zh", // 中文，英文设置en-US
   title: "前端面试题整合", // 浏览器标签标题
-  description: "收集整合前端面试题，前端面试题大全",
+  description: "x",
   base: "./", // url默认前缀
   appearance: true, // 暗黑模式
   ignoreDeadLinks: true, // 不会因死链接而使构建失败

@@ -4,6 +4,7 @@ export default {
     { text: "markdown图标", link: "/order/markdown图标" },
     {
       text: "前端面试相关",
+      link:'/home',
       collapsible: true, // 可折叠
       collapsed: true, // 初始不折叠
       items: [
@@ -198,7 +199,7 @@ export default {
                 },
               ],
             },
-            
+
             {
               text: "框架相关面试题",
               collapsible: true,
@@ -220,7 +221,7 @@ export default {
                   text: "React面试题",
                   link: "/Document/前端面试相关/【前端面试题】/框架相关面试题/React面试题",
                 },
-                
+
                 {
                   text: "Angular面试题",
                   link: "/Document/前端面试相关/【前端面试题】/框架相关面试题/Angular面试题",
