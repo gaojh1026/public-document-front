@@ -1,14 +1,17 @@
-image: node:18
 pages:
-  cache:
-    paths:
-      - node_modules/
+  stage: deploy
+  image: node:16.20.2
   script:
-    # - apk add git # Uncomment this if you're using small docker images like alpine and have lastUpdated enabled
+    - mkdir .public
+    - npm config set registry https://registry.npmmirror.com/
     - npm install
     - npm run build
+    - cp -r ./dist/* .public
+    - rm -rf public
+    - mv .public public
   artifacts:
     paths:
       - public
-  only:
-    - main
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
