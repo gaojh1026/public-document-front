@@ -17,7 +17,7 @@ hero:
   actions:
     - theme: brand
       text: 查看笔记
-      link: /home
+      link: /order/
     - theme: alt
       text: 在 Gitlab社区版 上查看
       link: https://gitlab.com/gaojiahui

@@ -3,7 +3,7 @@ import config from "genji-theme-vitepress/config";
 
 import socialLinks from "./config/socialLinks";
 import nav from "./config/nav";
-// import algolia from "./config/algolia";
+import algolia from "./config/algolia";
 import sidebar from "./config/sidebar";
 import search from "./config/search";
 
@@ -15,6 +15,7 @@ export default defineConfig({
   title: "前端面试题整合", // 浏览器标签标题
   description: "x",
   base: "./", // url默认前缀
+  srcDir :'./pages',
   appearance: true, // 暗黑模式
   ignoreDeadLinks: true, // 不会因死链接而使构建失败
   lastUpdated: true, // 使用 git 提交获取时间戳，使默认主题能够显示页面的上次更新时间
@@ -55,7 +56,7 @@ export default defineConfig({
     outline: "deep", // 大纲显示层级：number：只显示 | [number, number]：指定层级范围显示 | 'deep'：全部显示 | false：不显示
 
     // 使用浏览器内置索引进行模糊全文搜索
-    search,
+    // search,
 
     // 使用 algolia 搜索框
     // search: {
@@ -66,9 +67,8 @@ export default defineConfig({
     nav,
     // 右上角导航中显示带有图标的社交帐户链接
     socialLinks,
-    // *****左边侧栏导航*****
+    // 左边侧栏导航
     sidebar,
-
     // 编辑
     editLink: {
       pattern:
