@@ -1,20 +1,15 @@
 import { defineConfig } from "vitepress";
-import config from "genji-theme-vitepress/config";
 
 import socialLinks from "./config/socialLinks";
 import nav from "./config/nav";
-import algolia from "./config/algolia";
 import sidebar from "./config/sidebar";
 import search from "./config/search";
 
-// 配置文档：https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // 代码块运行插件文档：https://genji-md.dev/getting-started
-  extends: config,
-  lang: "zh", // 中文，英文设置en-US
-  title: "前端面试题整合", // 浏览器标签标题
-  description: "x",
-  base: "./", // url默认前缀
+  base: "/", // url默认前缀
+  lang: "zh-CN", // 中文，英文设置en-US
+  title: "文档整合", // 浏览器标签标题
+  description: "一个集合我的个人收藏",
   srcDir :'./pages',
   appearance: true, // 暗黑模式
   ignoreDeadLinks: true, // 不会因死链接而使构建失败
@@ -23,7 +18,6 @@ export default defineConfig({
   markdown: {
     // 主题选择：https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-themes
     // 主题预览：https://vscodethemes.com/
-    // 添加自定义的主题(加载主题)：https://github.com/shikijs/shiki/blob/main/docs/themes.md#loading-theme
     theme: "one-dark-pro",
     lineNumbers: true, // 显示代码行数
     // markdown-it-attrs 插件忽略
@@ -35,20 +29,7 @@ export default defineConfig({
   outDir: "../dist", // 打包输出的目录
   titleTemplate: "前端笔记", // 标题后缀
   cleanUrls: true, // url是否带.html后缀
-  // 浏览器标签图标设置
-  head: [
-    [
-      "link",
-      {
-        rel: "icon",
-        href: "https://avatars.githubusercontent.com/u/48587992?v=4",
-      },
-    ],
-    // ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-  ],
-
-  // ***** 主题设置 *****
-  // 文档：https://vitepress.vuejs.org/config/theme-configs
+  head: createHead(),
   themeConfig: {
     logo: "/img/buding.svg",
     siteTitle: "前端面试题", // 网站左上角标题
@@ -56,13 +37,7 @@ export default defineConfig({
     outline: "deep", // 大纲显示层级：number：只显示 | [number, number]：指定层级范围显示 | 'deep'：全部显示 | false：不显示
 
     // 使用浏览器内置索引进行模糊全文搜索
-    // search,
-
-    // 使用 algolia 搜索框
-    // search: {
-    //   provider: 'algolia',
-    //   options: algolia,
-    // },
+    search, 
     // 右上角导航
     nav,
     // 右上角导航中显示带有图标的社交帐户链接
@@ -73,7 +48,7 @@ export default defineConfig({
     editLink: {
       pattern:
         "https://github.com/muyaCode/FrontEndInterviewQuestion/edit/main/docs/:path",
-      text: "在 GitHub 上编辑此页",
+      text: "在 Gitlab 上编辑此页",
     },
     // 自定义上次更新的文本和日期格式
     lastUpdated: {
@@ -88,11 +63,11 @@ export default defineConfig({
       next: "下一篇",
     },
 
-    // 右边文档大纲下面的-卡片广告
-    carbonAds: {
-      code: "卡片广告 code",
-      placement: "卡片广告布置",
-    },
+    // // 右边文档大纲下面的-卡片广告
+    // carbonAds: {
+    //   code: "卡片广告 code",
+    //   placement: "卡片广告布置",
+    // },
 
     // 首页页脚配置。您可以添加消息和版权。仅当页面由于设计原因不包含边栏时，才会显示页脚。
     footer: {
@@ -101,3 +76,32 @@ export default defineConfig({
     },
   },
 });
+
+
+/**
+ * @type {()=>import('vitepress').HeadConfig[]}
+ */
+
+function createHead() {
+  return [
+    ['meta', { name: 'author', content: 'Vbenjs Team' }],
+    [
+      'meta',
+      {
+        name: 'keywords',
+        content: 'vben, vitejs, vite, ant-design-vue, vue',
+      },
+    ],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.ico' }],
+    [
+      'meta',
+      {
+        name: 'viewport',
+        content:
+          'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no',
+      },
+    ],
+    ['meta', { name: 'keywords', content: 'vue vben admin docs' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+  ];
+}
