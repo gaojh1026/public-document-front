@@ -9,7 +9,7 @@ import socialLinks from "./config/socialLinks";
 import routerConfig from '../router.config.json'
 
 export default defineConfig({
-  base: "/", // url默认前缀
+  base: "/vitepress_docs/", // url默认前缀
   lang: "zh-CN", // 中文，英文设置en-US
   title: "文档整合", // 浏览器标签标题
   description: "一个集合我的个人收藏",
@@ -39,7 +39,7 @@ export default defineConfig({
     outlineTitle: "⚡️文档内容大纲", // 大纲标题
     outline: "deep", // 大纲显示层级：number：只显示 | [number, number]：指定层级范围显示 | 'deep'：全部显示 | false：不显示
     // 使用浏览器内置索引进行模糊全文搜索
-    search, 
+    search,
     // 右上角导航
     nav,
     // 右上角导航中显示带有图标的社交帐户链接
@@ -51,7 +51,7 @@ export default defineConfig({
     // 编辑
     editLink: {
       pattern:
-        "https://gitlab.com/gaojh/project/vitepress_docs/-/blob/main/pages/:path",
+        "https://gitlab.com/gaojh-public/vitepress_docs/-/blob/main/pages/:path",
       text: "在 Gitlab 上编辑此页",
     },
     // 自定义上次更新的文本和日期格式
