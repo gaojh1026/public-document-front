@@ -104,6 +104,6 @@ function createHead() {
     //   },
     // ],
     // ['meta', { name: 'keywords', content: 'vue vben admin docs' }],
-    ['link', { rel: 'icon', href: '/logo.svg' }],
+    ['link', { rel: 'icon', href: '/vitepress_docs/logo.svg' }],
   ];
 }
